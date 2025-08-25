@@ -44,11 +44,8 @@ Simple Subscription
 Queue Group Subscription
 Wildcard Subscription
 ```
-
 Subscriber
-
 Subject
-
 Message
 ```
 At-most-once
