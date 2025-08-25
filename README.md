@@ -57,8 +57,8 @@ At-least-once
 
 ## Simple 
 ```bash
-nats pub hello "Hi from macOS"
 nats sub hello
+nats pub hello "Hi from macOS"
 ```
 
 <!--------------------------------------------------------------------------------- Group -->
