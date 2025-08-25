@@ -15,7 +15,6 @@ nats pub hello "Hi from macOS"
 <br><br>
 
 ## Group 
-Command-Line
 ```bash
 # terminal 1
 nats sub group1.events
@@ -30,7 +29,6 @@ nats pub group2.events "hello from group2 publisher"
 <br><br>
 
 ## Queue 
-Command-Line
 ```bash
 # terminal 1
 nats sub tasks --queue workers

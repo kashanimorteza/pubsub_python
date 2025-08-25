@@ -6,28 +6,30 @@
 <br><br>
 
 ## Resource  
-Web
 ```
 Web    : https://nats.io/
 Github : https://github.com/nats-io
 ```
 
-<!--------------------------------------------------------------------------------- Server -->
+<!--------------------------------------------------------------------------------- Install -->
 <br><br>
 
-## Server 
+## Install 
 
-Install : Mac
+Mac
 ```bash
 brew install nats-server
 brew install nats-io/nats-tools/nats
 ```
 
-Install : Linux
+Linux
 ```bash
 ```
 
-Tools
+<!--------------------------------------------------------------------------------- Tools -->
+<br><br>
+
+## Tools 
 ```bash
 nats-server --version
 nats --version
@@ -96,6 +98,11 @@ source .myenv3/bin/activate
 ```bash
 pip install nats-py
 ```
+
+<!--------------------------------------------------------------------------------- Rust -->
+<br><br>
+
+## Rust 
 
 <!--------------------------------------------------------------------------------- Note -->
 <br><br>
