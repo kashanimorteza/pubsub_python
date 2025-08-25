@@ -39,8 +39,11 @@ nats --version
 ## Structure 
 
 Publisher
+
 Subscriber
+
 Subject
+
 Message
 
 <!--------------------------------------------------------------------------------- Authentication -->
