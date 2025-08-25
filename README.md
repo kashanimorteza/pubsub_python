@@ -39,45 +39,32 @@ nats --version
 ## Structure 
 
 Publisher
+```
+Simple Subscription
+Queue Group Subscription
+Wildcard Subscription
+```
 
 Subscriber
 
 Subject
 
 Message
-
-<!--------------------------------------------------------------------------------- Subscriber -->
-<br><br>
-
-## Subscriber 
-
-Simple Subscription
-
-Queue Group Subscription
-
-Wildcard Subscription
-
-<!--------------------------------------------------------------------------------- Message -->
-<br><br>
-
-## Message 
+```
 At-most-once
-
 At-least-once
+```
 
-<!--------------------------------------------------------------------------------- Authentication -->
+
+<!--------------------------------------------------------------------------------- Simple -->
 <br><br>
 
-## Authentication 
+## Simple 
+```bash
+nats pub hello "Hi from macOS"
+nats sub hello
+```
 
-Authentication
-
-<!--------------------------------------------------------------------------------- Encryption -->
-<br><br>
-
-## Encryption 
-
-Encryption
 
 
 <!--------------------------------------------------------------------------------- Group -->
@@ -117,14 +104,21 @@ nats pub tasks "job-2"
 
 JetStream
 
-<!--------------------------------------------------------------------------------- Command -->
+
+
+<!--------------------------------------------------------------------------------- Authentication -->
 <br><br>
 
-## Command 
-```bash
-nats pub hello "Hi from macOS"
-nats sub hello
-```
+## Authentication 
+
+Authentication
+
+<!--------------------------------------------------------------------------------- Encryption -->
+<br><br>
+
+## Encryption 
+
+Encryption
 
 <!--------------------------------------------------------------------------------- Note -->
 <br><br>
