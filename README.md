@@ -17,34 +17,20 @@ Web
 
 ## Server 
 
-Mac
+Install : Mac
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $HOME/.cargo/env
-echo $HOME/.cargo/env >> $HOME/.zshrc
+brew install nats-server
+brew install nats-io/nats-tools/nats
 ```
 
-Linux
-```bash
-sudo apt update && sudo apt upgrade -y
-sudo apt install build-essential pkg-config libssl-dev -y
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $HOME/.cargo/env
-rustc --version
-cargo --version
-rustup update
-```
-
-Windows
+Install : Linux
 ```bash
 ```
 
-IDE
+Tools
 ```bash
-Vs-Code
-Rust Extension Pack
+nats-server --version
+nats --version
 ```
 
 <!--------------------------------------------------------------------------------- Structure -->
@@ -93,12 +79,36 @@ Authentication
 
 Encryption
 
-<!--------------------------------------------------------------------------------- Encryption -->
+
+<!--------------------------------------------------------------------------------- Group -->
 <br><br>
 
-## Grouping 
+## Group 
+Command-Line
+```bash
+# terminal 1
+nats sub group1.events
+# terminal 2
+nats sub group2.events
+# terminal 3
+nats pub group1.events "hello from group1 publisher"
+nats pub group2.events "hello from group2 publisher"
+```
 
-Grouping
+<!--------------------------------------------------------------------------------- Queue -->
+<br><br>
+
+## Queue 
+Command-Line
+```bash
+# terminal 1
+nats sub tasks --queue workers
+# terminal 2
+nats sub tasks --queue workers
+# terminal 3
+nats pub tasks "job-1"
+nats pub tasks "job-2"
+```
 
 <!--------------------------------------------------------------------------------- Log -->
 <br><br>
@@ -106,6 +116,15 @@ Grouping
 ## Log 
 
 JetStream
+
+<!--------------------------------------------------------------------------------- Command -->
+<br><br>
+
+## Command 
+```bash
+nats pub hello "Hi from macOS"
+nats sub hello
+```
 
 <!--------------------------------------------------------------------------------- Note -->
 <br><br>
