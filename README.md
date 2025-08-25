@@ -53,9 +53,13 @@ Rust Extension Pack
 ## Structure 
 
 NATS Server
+
 Publisher
+
 Subscriber
+
 Subject
+
 Message
 
 <!--------------------------------------------------------------------------------- Subscriber -->
@@ -64,7 +68,9 @@ Message
 ## Subscriber 
 
 Simple Subscription
+
 Queue Group Subscription
+
 Wildcard Subscription
 
 <!--------------------------------------------------------------------------------- Message -->
@@ -72,6 +78,7 @@ Wildcard Subscription
 
 ## Message 
 At-most-once
+
 At-least-once
 
 
@@ -91,6 +98,9 @@ JetStream
 ## Note 
 
 Authentication
+
 Encryption
+
 Grouping
+
 Log
