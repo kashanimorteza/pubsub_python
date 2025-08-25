@@ -67,6 +67,36 @@ Encryption
 
 JetStream
 
+<!--------------------------------------------------------------------------------- Python -->
+<br><br>
+
+## Python 
+Source
+```bash
+git clone git@github.com:kashanimorteza/pubsub_python.git
+cd pubsub_python
+```
+<!-------------------------- Python -->
+Python
+```bash
+add-apt-repository ppa:deadsnakes/ppa
+apt update -y
+apt install python3 -y
+apt install python3-pip -y
+apt install python3-venv -y
+```
+<!-------------------------- Virtual Environment -->
+Virtual Environment
+```bash
+cd /root/pubsub_python
+python3 -m venv .myenv3
+.myenv3/bin/python3 -m pip install --upgrade pip  
+source .myenv3/bin/activate  
+```
+```bash
+pip install nats-py
+```
+
 <!--------------------------------------------------------------------------------- Note -->
 <br><br>
 
